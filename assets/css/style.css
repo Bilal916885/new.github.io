@@ -1,0 +1,441 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+body{
+    background:#fff;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    /* background-image: url(../images/bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    height: 1500px;
+    background-attachment: fixed; */
+
+}
+/* -------- */
+.main-bg{
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    height: 1550px;
+    background-attachment: fixed;
+
+}
+.icns{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: end;
+    gap: 1vw;
+    padding: 2vw;
+}
+.icns .btn-1 img{
+    width: 19vw;
+    transform: translateX(3vw);
+    transition: .5s;
+    
+}
+.icns .btn-2 img{
+    width: 4.7vw;
+    transition: .3s;
+
+    
+}
+.icns .btn-2 img:hover{
+    transform: translateY(-.4vw);
+}
+.icns .btn-3 img{
+    width: 5vw;  
+    transition: .3s; 
+}
+.icns .btn-3 img:hover{
+    transform: translateY(-.4vw);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.up img{
+    width: 45vw;
+}
+ .low img{
+    width: 26vw;
+}
+.s1{
+    position: absolute;
+    width: 7vw;
+    left: 18%;
+    top: 13%;
+    animation: flash 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate;
+}
+.s2{
+    position: absolute;
+    width: 7vw;
+    left: 74%;
+    top: 16%;
+    z-index: 2;
+    animation: flash 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate;
+}
+
+.s3{
+    position: absolute;
+    width: 12vw;
+    left: 78%;
+    z-index: 3;
+    top: 49%;
+    
+}
+
+.s3:hover{
+    opacity: 0.8;
+}
+.m1{
+    position: absolute;
+    width: 67vw;
+    left: 10%;
+    z-index: 3;
+    top: 40%;
+}
+
+/* ------texts--- */
+.texts{
+    display: flex;
+    justify-content: space-between;
+    padding: 4vw;
+}
+.texts .left img{
+    width: 20vw;
+}
+.texts .right img{
+    width: 25vw;
+}
+.end{
+    margin-top: auto;
+
+    
+
+}
+/* ----------line-1------------ */
+.lines{
+    margin-top: auto;
+    overflow-x: hidden;
+    
+    
+}
+.line-1{
+background-image: url(../images/l1.png);
+background-size: cover;
+background-position: center;
+width: 100%;
+height:11vw;
+padding: 1vw;
+/* position: absolute; */
+transform: translateY(7vw);
+
+}
+.line-1 img{
+    width: 100%;
+    /* animation: move 5s 1s linear infinite alternate;
+    position: relative; */
+    animation: fadeIn 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate;
+    
+}
+@keyframes move {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
+
+    
+}
+.line-2{
+    background-image: url(../images/l2.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:17vw;
+   transform: translateY(-8vw);
+   padding: 1vw;
+    
+    
+    }
+    .line-2 img{
+        width: 100%;
+        /* animation: movee 5s 1s linear infinite ;
+        position: relative;
+        transform: rotate(-2deg); */
+        animation: fadeIn 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate;
+        
+    }
+    @keyframes movee {
+        0%{
+            left: 0%;
+        }
+        100%{
+            left: 100%;
+        }
+    
+        
+    }
+    /* -----------------media------------ */
+    @media (max-width:2560px){
+    .main-bg{
+        background-image: url(../images/bg.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        position: relative;
+        height: 3100px;
+        background-attachment: fixed;
+    }
+    
+    }
+    @media (max-width:600px) {
+        .icns{
+            display: flex;
+            align-items: center;
+            align-items: center;
+            justify-content: center;
+            gap: 1vw;
+            padding-left: 20vw;
+            padding-top: 4.5vw;
+        }
+        .icns .btn-1 img{
+            width: 26vw;
+            transform: translateX(6vw);
+            
+        }
+        .icns .btn-2 img{
+            width: 6.7vw;
+        
+            
+        }
+        .icns .btn-3 img{
+            width: 7.4vw;   
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .up img{
+            width: 45vw;
+        }
+         .low img{
+            width: 26vw;
+        }
+        .s1{
+            position: absolute;
+            width: 8vw;
+            left: 21%;
+            top: 10%;
+        }
+        .s2{
+            position: absolute;
+            width: 8vw;
+            left: 71%;
+            top: 22%;
+            z-index: 2;
+        }
+        .texts{
+            display: flex;
+            justify-content: center;
+            gap: 10vw;
+            margin-top: 4vw;
+        }
+        .texts .left img{
+            width: 24vw;
+        }
+        .texts .right img{
+            width: 35vw;
+        }
+        .lines{
+            margin-top: 25%;
+        }
+        .m1{
+            position: absolute;
+            width: 77vw;
+            left: 4%;
+            z-index: 3;
+            top: 52%;
+        }
+        
+.s3{
+    position: absolute;
+    width: 20vw;
+    left: 56%;
+    z-index: 3;
+    top: 45%;
+}
+.line-1{
+    background-image: url(../images/l1.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:14vw;
+    padding: 2.5vw;
+    /* position: absolute; */
+    transform: translateY(6vw);
+    
+    
+    }
+    .line-1 img{
+        width: 100%;
+        
+    }
+    .line-2{
+        background-image: url(../images/l2.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height:21vw;
+       transform: translateY(-12vw);
+       padding: 3.5vw;
+        
+        
+        }
+    }
+    /* ------------------- */
+    @media (max-width:460px){
+        .up img{
+            width: 54vw;
+        }
+         .low img{
+            width: 33vw;
+        }
+        .s1{
+            position: absolute;
+            width: 9vw;
+            left: 16.6%;
+            top: 10%;
+        }
+        .s2{
+            position: absolute;
+            width: 9vw;
+            left: 73%;
+            top: 22%;
+            z-index: 2;
+        }
+        .icns{
+            display: flex;
+            align-items: center;
+            align-items: center;
+            justify-content: center;
+            gap: 1vw;
+            padding-left: 20vw;
+            padding-top: 4.5vw;
+        }
+        .icns .btn-1 img{
+            width: 28vw;
+            transform: translateX(6vw);
+            
+        }
+        .icns .btn-2 img{
+            width: 6.7vw;
+        
+            
+        }
+        .icns .btn-3 img{
+            width: 7vw;   
+        }
+        .m1{
+            position: absolute;
+            width: 86vw;
+            left: 0;
+            z-index: 3;
+            top: 49.8%;
+        }
+        .texts .left img{
+            width: 24vw;
+        }
+        .texts .right img{
+            width: 38vw;
+        }
+        .s3{
+            position: absolute;
+            width: 22vw;
+            left: 56%;
+            z-index: 3;
+            top: 45%;
+        }
+        
+
+
+    }
+    @media (max-width:416px) {
+        .lines{
+            margin-top: 35%;
+        }
+        .m1{
+            position: absolute;
+            width: 97vw;
+            left: -8%;
+            z-index: 3;
+            top: 48%;
+        }
+        .texts{
+            display: flex;
+            justify-content: center;
+            gap: 10vw;
+            margin-top: 5vw;
+        }
+        .texts .left img{
+            width: 27vw;
+        }
+        .texts .right img{
+            width: 38vw;
+        }
+        .s3{
+            position: absolute;
+            width: 24vw;
+            left: 56%;
+            z-index: 3;
+            top: 42%;
+        }
+        .s1{
+            position: absolute;
+            width: 9vw;
+            left: 16.6%;
+            top: 10%;
+        }
+        .s2{
+            position: absolute;
+            width: 9vw;
+            left: 73%;
+            top: 20%;
+            z-index: 2;
+        }
+        
+
+
+    }
+    @media (max-width:380px){
+        .lines{
+            margin-top: 40%;
+        }
+        .m1{
+            position: absolute;
+            width: 110vw;
+            left: -15%;
+            z-index: 3;
+            top: 42.8%;
+        }
+    }
