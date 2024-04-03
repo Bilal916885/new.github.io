@@ -283,7 +283,7 @@ transform: translateY(7vw);
     width: 20vw;
     left: 56%;
     z-index: 3;
-    top: 45%;
+    top: 43%;
 }
 .line-1{
     background-image: url(../images/l1.png);
@@ -374,7 +374,7 @@ transform: translateY(7vw);
             width: 22vw;
             left: 56%;
             z-index: 3;
-            top: 45%;
+            top: 42%;
         }
         
 
@@ -408,7 +408,7 @@ transform: translateY(7vw);
             width: 24vw;
             left: 56%;
             z-index: 3;
-            top: 42%;
+            top: 40%;
         }
         .s1{
             position: absolute;
@@ -437,5 +437,12 @@ transform: translateY(7vw);
             left: -15%;
             z-index: 3;
             top: 42.8%;
+        }
+        .s3{
+            position: absolute;
+            width: 24vw;
+            left: 56%;
+            z-index: 3;
+            top: 40%;
         }
     }
