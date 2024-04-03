@@ -374,7 +374,7 @@ transform: translateY(7vw);
             width: 22vw;
             left: 56%;
             z-index: 3;
-            top: 42%;
+            top: 43.5%;
         }
         
 
@@ -408,7 +408,7 @@ transform: translateY(7vw);
             width: 24vw;
             left: 56%;
             z-index: 3;
-            top: 40%;
+            top: 42%;
         }
         .s1{
             position: absolute;
@@ -443,6 +443,6 @@ transform: translateY(7vw);
             width: 24vw;
             left: 56%;
             z-index: 3;
-            top: 40%;
+            top: 42%;
         }
     }
